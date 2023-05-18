@@ -19,7 +19,7 @@ const Hero = () => {
       </div>
       <ComputersCanvas/>
 
-      <div className="absolute lg:hidden xs-bottom-10 bottom-20 w-full flex justify-center items-star">
+      {/* <div className="absolute lg:hidden xs-bottom-10 bottom-20 w-full flex justify-center items-star">
         <a href="#about">
           <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary fles justify-center items-start p-2">
             <motion.div
@@ -36,7 +36,7 @@ const Hero = () => {
             />
           </div>
         </a>
-      </div>
+      </div> */}
     </section>
   )
 }
