@@ -1,265 +1,146 @@
-import {
-    mobile,
-    backend,
-    creator,
-    web,
-    javascript,
-    typescript,
-    html,
-    css,
-    reactjs,
-    redux,
-    tailwind,
-    nodejs,
-    mongodb,
-    git,
-    figma,
-    docker,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
-    carrent,
-    jobit,
-    tripguide,
-    threejs,
-  } from "../assets";
-  
-  export const navLinks = [
-    {
-      id: "about",
-      title: "About",
-    },
-    {
-      id: "work",
-      title: "Work",
-    },
-    {
-      id: "contact",
-      title: "Contact",
-    },
-  ];
-  
-  const services = [
-    {
-      title: "Web Developer",
-      icon: web,
-    },
-    {
-      title: "React Native Developer",
-      icon: mobile,
-    },
-    {
-      title: "Backend Developer",
-      icon: backend,
-    },
-    {
-      title: "Content Creator",
-      icon: creator,
-    },
-  ];
-  
-  const technologies = [
-    {
-      name: "HTML 5",
-      icon: html,
-    },
-    {
-      name: "CSS 3",
-      icon: css,
-    },
-    {
-      name: "JavaScript",
-      icon: javascript,
-    },
-    {
-      name: "TypeScript",
-      icon: typescript,
-    },
-    {
-      name: "React JS",
-      icon: reactjs,
-    },
-    {
-      name: "Redux Toolkit",
-      icon: redux,
-    },
-    {
-      name: "Tailwind CSS",
-      icon: tailwind,
-    },
-    {
-      name: "Node JS",
-      icon: nodejs,
-    },
-    {
-      name: "MongoDB",
-      icon: mongodb,
-    },
-    {
-      name: "Three JS",
-      icon: threejs,
-    },
-    {
-      name: "git",
-      icon: git,
-    },
-    {
-      name: "figma",
-      icon: figma,
-    },
-    {
-      name: "docker",
-      icon: docker,
-    },
-  ];
-  
-  const experiences = [
-    {
-      title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
-      iconBg: "#383E56",
-      date: "March 2020 - April 2021",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
-      iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
-      iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-  ];
-  
-  const testimonials = [
-    {
-      testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
-    },
-    {
-      testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
-    },
-    {
-      testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
-      designation: "CTO",
-      company: "456 Enterprises",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
-    },
-  ];
-  
-  const projects = [
-    {
-      name: "Car Rent",
-      description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-      tags: [
-        {
-          name: "react",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "mongodb",
-          color: "green-text-gradient",
-        },
-        {
-          name: "tailwind",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: carrent,
-      source_code_link: "https://github.com/",
-    },
-    {
-      name: "Job IT",
-      description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-      tags: [
-        {
-          name: "react",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "restapi",
-          color: "green-text-gradient",
-        },
-        {
-          name: "scss",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: jobit,
-      source_code_link: "https://github.com/",
-    },
-    {
-      name: "Trip Guide",
-      description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-      tags: [
-        {
-          name: "nextjs",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "supabase",
-          color: "green-text-gradient",
-        },
-        {
-          name: "css",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
-    },
-  ];
-  
-  export { services, technologies, experiences, testimonials, projects };
+import { backend, creator, web, mobile } from "../assets";
+
+export const navLinks = [
+  { id: "about", title: "About" },
+  { id: "work", title: "Experience" },
+  { id: "projects", title: "Projects" },
+  { id: "contact", title: "Contact" },
+];
+
+export const socialLinks = {
+  email: "rishushukla559@gmail.com",
+  phone: "+91-9936767031",
+  linkedin: "https://www.linkedin.com/in/",
+  github: "https://github.com/",
+  resume: "/RishuShukla_Resume2026.pdf",
+};
+
+const services = [
+  { title: "Backend Engineering", icon: backend },
+  { title: "Trading Systems", icon: web },
+  { title: "Distributed Systems", icon: mobile },
+  { title: "Real-time Platforms", icon: creator },
+];
+
+const skillGroups = [
+  {
+    title: "Languages",
+    items: ["Golang", "Scala", "C++", "SQL"],
+  },
+  {
+    title: "Backend & Architecture",
+    items: [
+      "Distributed Systems",
+      "Microservices",
+      "REST APIs",
+      "Event-Driven Architecture",
+      "Concurrency",
+      "System Design",
+    ],
+  },
+  {
+    title: "Databases & Messaging",
+    items: ["PostgreSQL", "MongoDB", "Redis", "Kafka"],
+  },
+  {
+    title: "Domain",
+    items: [
+      "Order Management",
+      "Broker Integrations",
+      "Risk Management (RMS)",
+      "Trading Platforms",
+      "Compliance",
+    ],
+  },
+  {
+    title: "Cloud & Observability",
+    items: ["AWS (S3)", "OpenTelemetry", "New Relic APM", "Git"],
+  },
+];
+
+const experiences = [
+  {
+    title: "Software Engineer",
+    company_name: "INDmoney, Bengaluru",
+    initial: "IN",
+    iconBg: "#1a3a5c",
+    date: "Sep 2025 – Present",
+    points: [
+      "Led the Alpaca Fully Disclosed to Omnibus migration end-to-end, moving ~$10M of cash into the pool account and enabling interest income on idle balances.",
+      "Drove the DriveWealth Omnibus migration across the trading stack, bringing ~$40M of cash into the omnibus pool and improving capital efficiency.",
+      "Architected the Order Queueing system that runs RMS checks before broker submission, absorbs market-open spikes, and enables zero-downtime EOD/BOD operations.",
+      "Spearheaded migration of critical trading services (Trade Screen, Order Placement, Event Consumption) from Scala to Golang.",
+      "Owned Order Modification end-to-end (~5% of daily orders at 99.8% accuracy) and shipped SIP via Wallet (~10% of daily trading volume).",
+      "Built Variable Pricing for dynamic brokerage, integrated GTN for European markets, and shipped Fractional Limit, Trigger, and Extended-Hours trading.",
+    ],
+  },
+  {
+    title: "Software Engineer",
+    company_name: "Junglee Games, Bengaluru",
+    initial: "JG",
+    iconBg: "#2d1f4e",
+    date: "Aug 2024 – Aug 2025",
+    points: [
+      "Introduced preferential matchmaking with priority-based optimal table counts, cutting average join time by 25% and lifting system revenue by 10%.",
+      "Developed geolocation and skill-based matchmaking using Golang, Redis (geospatial), Kafka, PostgreSQL and MongoDB.",
+      "Delivered the BuyInLimits Service for real-time deposit validation with 100% regulatory compliance for responsible gaming.",
+      "Improved observability with structured logging, system metrics and New Relic APM.",
+    ],
+  },
+  {
+    title: "Software Engineer Intern",
+    company_name: "Junglee Games, Bengaluru",
+    initial: "JG",
+    iconBg: "#383E56",
+    date: "Aug 2023 – Aug 2024",
+    points: [
+      "Designed and deployed a real-time Odds Calculator Service using the 2+2 algorithm and Cactus Kev’s algorithm.",
+      "Optimized the HandHistory service (AWS S3) with Goroutines for 10x faster execution; integrated OpenTelemetry.",
+      "Raised test coverage by 80% with unit and integration tests; refactored legacy code for maintainability.",
+    ],
+  },
+];
+
+const projects = [
+  {
+    name: "Route Optimization",
+    description:
+      "Implemented a CVRP search-based algorithm for biomedical waste management, optimizing real-world hospital collection routes.",
+    tags: [
+      { name: "algorithms", color: "blue-text-gradient" },
+      { name: "optimization", color: "green-text-gradient" },
+      { name: "cvrp", color: "pink-text-gradient" },
+    ],
+  },
+  {
+    name: "Snippy",
+    description:
+      "Full-stack code snippet manager for CS students using React, MongoDB and REST APIs, built to improve developer productivity.",
+    tags: [
+      { name: "react", color: "blue-text-gradient" },
+      { name: "mongodb", color: "green-text-gradient" },
+      { name: "restapi", color: "pink-text-gradient" },
+    ],
+  },
+];
+
+const education = {
+  school: "SRM Institute of Science and Technology, Chennai",
+  degree: "B.Tech, Computer Science",
+  date: "2020 – 2024",
+  detail: "CGPA: 9.8",
+};
+
+const achievements = [
+  "Star Performer of the Quarter at Junglee Games (Oct 2024).",
+  "Shiv Nadar Foundation Scholarship for schooling and undergraduate studies.",
+];
+
+export {
+  services,
+  skillGroups,
+  experiences,
+  projects,
+  education,
+  achievements,
+};

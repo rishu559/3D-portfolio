@@ -1,19 +1,43 @@
 import React from "react";
+import { motion } from "framer-motion";
 
-import { BallCanvas } from "./canvas";
+import { styles } from "../style";
+import { skillGroups } from "../constants";
 import sectionWrapper from "../HOC/sectionWrapper";
-import { technologies } from "../constants";
+import { fadeIn, textVariant } from "../utils/motion";
 
 const Tech = () => {
   return (
-    <div className='flex flex-row flex-wrap justify-center gap-10'>
-      {technologies.map((technology) => (
-        <div className='w-28 h-28' key={technology.name}>
-          <BallCanvas icon={technology.icon} />
-        </div>
-      ))}
-    </div>
+    <>
+      <motion.div variants={textVariant()}>
+        <p className={styles.sectionSubText}>What I work with</p>
+        <h2 className={styles.sectionHeadText}>Skills.</h2>
+      </motion.div>
+
+      <div className="mt-12 flex flex-col gap-8">
+        {skillGroups.map((group, index) => (
+          <motion.div
+            key={group.title}
+            variants={fadeIn("up", "spring", index * 0.15, 0.6)}
+          >
+            <h3 className="text-white font-semibold text-[18px] mb-3">
+              {group.title}
+            </h3>
+            <div className="flex flex-wrap gap-3">
+              {group.items.map((item) => (
+                <span
+                  key={item}
+                  className="bg-tertiary text-secondary border border-white/10 px-4 py-2 rounded-lg text-[14px]"
+                >
+                  {item}
+                </span>
+              ))}
+            </div>
+          </motion.div>
+        ))}
+      </div>
+    </>
   );
 };
 
-export default sectionWrapper(Tech, "");
+export default sectionWrapper(Tech, "skills");
