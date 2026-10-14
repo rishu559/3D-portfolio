@@ -35,8 +35,7 @@ const Hero = () => {
             </a>
             <a
               href={socialLinks.resume}
-              target="_blank"
-              rel="noopener noreferrer"
+              download="RishuShukla_Resume2026.pdf"
               className="border border-secondary hover:border-white text-white font-medium py-3 px-6 rounded-lg transition-colors"
             >
               Download Resume

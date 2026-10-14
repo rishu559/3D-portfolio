@@ -43,8 +43,7 @@ const Navbar = () => {
           <li>
             <a
               href={socialLinks.resume}
-              target="_blank"
-              rel="noopener noreferrer"
+              download="RishuShukla_Resume2026.pdf"
               className="text-[#915eff] hover:text-white text-[16px] font-medium"
             >
               Resume
@@ -83,8 +82,7 @@ const Navbar = () => {
               <li>
                 <a
                   href={socialLinks.resume}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  download="RishuShukla_Resume2026.pdf"
                   className="text-[#915eff] font-medium text-[16px]"
                   onClick={() => setToggle(false)}
                 >
