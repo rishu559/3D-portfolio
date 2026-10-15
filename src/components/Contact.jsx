@@ -16,7 +16,7 @@ const Contact = () => {
 
       <motion.div
         variants={fadeIn("", "", 0.1, 1)}
-        className="mt-8 bg-tertiary p-8 rounded-2xl card-border shadow-card max-w-xl"
+        className="mt-6 bg-tertiary p-8 rounded-2xl card-border shadow-card max-w-xl"
       >
         <p className="text-secondary text-[16px] leading-7 mb-6">
           Open to conversations about backend systems, trading platforms,

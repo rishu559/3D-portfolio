@@ -5,9 +5,9 @@ import { socialLinks } from "../constants";
 
 const Hero = () => {
   return (
-    <section className="relative w-full min-h-[85vh] mx-auto flex items-center bg-primary">
+    <section className="relative w-full min-h-[70vh] mx-auto flex items-center bg-primary">
       <div
-        className={`${styles.paddingX} max-w-7xl mx-auto flex flex-row items-start gap-5 pt-28 pb-16`}
+        className={`${styles.paddingX} max-w-7xl mx-auto flex flex-row items-start gap-5 pt-24 pb-10`}
       >
         <div className="flex flex-col justify-center items-center mt-5">
           <div className="w-5 h-5 rounded-full bg-ink" />
@@ -26,7 +26,7 @@ const Hero = () => {
           <p className="mt-4 text-secondary text-[16px] max-w-xl leading-7">
             Golang · Kafka · Redis · Trading platforms · Order management
           </p>
-          <div className="mt-8 flex flex-wrap gap-4">
+          <div className="mt-6 flex flex-wrap gap-4">
             <a
               href="#contact"
               className="bg-ink hover:bg-ink-muted text-primary font-medium py-3 px-6 rounded-lg transition-colors"
@@ -44,7 +44,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="absolute xs:bottom-10 bottom-6 w-full flex justify-center items-center">
+      <div className="absolute xs:bottom-8 bottom-5 w-full flex justify-center items-center">
         <a href="#about" aria-label="Scroll to about">
           <div className="w-[35px] h-[64px] rounded-3xl border-2 border-secondary flex justify-center items-start p-2">
             <motion.div

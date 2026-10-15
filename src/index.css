@@ -21,8 +21,8 @@ h3,
 }
 
 .hash-span {
-  margin-top: -100px;
-  padding-bottom: 100px;
+  margin-top: -64px;
+  padding-bottom: 64px;
   display: block;
 }
 
@@ -38,6 +38,10 @@ h3,
 /* Vertical timeline overrides for light theme */
 .vertical-timeline::before {
   background: #D4D3CF !important;
+}
+
+.vertical-timeline-element {
+  margin: 1.5em 0 !important;
 }
 
 .vertical-timeline-element-icon {

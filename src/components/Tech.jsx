@@ -14,7 +14,7 @@ const Tech = () => {
         <h2 className={styles.sectionHeadText}>Skills.</h2>
       </motion.div>
 
-      <div className="mt-12 flex flex-col gap-8">
+      <div className="mt-8 flex flex-col gap-5">
         {skillGroups.map((group, index) => (
           <motion.div
             key={group.title}

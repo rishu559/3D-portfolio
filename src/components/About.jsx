@@ -53,7 +53,7 @@ const About = () => {
 
       <motion.div
         variants={fadeIn("", "", 0.2, 1)}
-        className="mt-8 grid sm:grid-cols-2 gap-6 max-w-3xl"
+        className="mt-6 grid sm:grid-cols-2 gap-6 max-w-3xl"
       >
         <div>
           <h3 className="text-ink font-semibold text-[18px] mb-2">Education</h3>
@@ -77,7 +77,7 @@ const About = () => {
         </div>
       </motion.div>
 
-      <div className="mt-20 flex flex-wrap gap-10">
+      <div className="mt-10 flex flex-wrap gap-8">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
