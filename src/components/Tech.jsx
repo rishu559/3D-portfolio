@@ -20,14 +20,14 @@ const Tech = () => {
             key={group.title}
             variants={fadeIn("up", "spring", index * 0.15, 0.6)}
           >
-            <h3 className="text-white font-semibold text-[18px] mb-3">
+            <h3 className="text-ink font-semibold text-[18px] mb-3">
               {group.title}
             </h3>
             <div className="flex flex-wrap gap-3">
               {group.items.map((item) => (
                 <span
                   key={item}
-                  className="bg-tertiary text-secondary border border-white/10 px-4 py-2 rounded-lg text-[14px]"
+                  className="bg-tertiary text-ink-muted border border-black-200 px-4 py-2 rounded-lg text-[14px]"
                 >
                   {item}
                 </span>

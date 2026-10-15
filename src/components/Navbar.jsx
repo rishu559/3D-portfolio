@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { styles } from "../style";
 import { navLinks, socialLinks } from "../constants";
-import { logo, menu, close } from "../assets";
+import { menu, close } from "../assets";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -10,7 +10,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary`}
+      className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary/95 backdrop-blur-sm border-b border-black-200`}
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <Link
@@ -21,10 +21,11 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
-          <p className="text-white text-[18px] font-bold cursor-pointer flex">
+          <p className="text-ink text-[18px] font-bold cursor-pointer flex font-display tracking-tight">
             Rishu&nbsp;
-            <span className="sm:block hidden">Shukla</span>
+            <span className="sm:block hidden font-normal text-ink-muted">
+              Shukla
+            </span>
           </p>
         </Link>
 
@@ -33,8 +34,8 @@ const Navbar = () => {
             <li
               key={link.id}
               className={`${
-                active === link.title ? "text-white" : "text-secondary"
-              } hover:text-white text-[18px] font-medium cursor-pointer`}
+                active === link.title ? "text-ink" : "text-secondary"
+              } hover:text-ink text-[16px] font-medium cursor-pointer transition-colors`}
               onClick={() => setActive(link.title)}
             >
               <a href={`#${link.id}`}>{link.title}</a>
@@ -44,7 +45,7 @@ const Navbar = () => {
             <a
               href={socialLinks.resume}
               download="RishuShukla_Resume2026.pdf"
-              className="text-[#915eff] hover:text-white text-[16px] font-medium"
+              className="text-ink hover:text-ink-muted text-[16px] font-medium border-b border-ink/30 hover:border-ink transition-colors"
             >
               Resume
             </a>
@@ -62,15 +63,15 @@ const Navbar = () => {
           <div
             className={`${
               !toggle ? "hidden" : "flex"
-            } black-gradient absolute top-20 right-3 min-w-[140px] z-10 rounded-xl`}
+            } bg-tertiary border border-black-200 absolute top-20 right-3 min-w-[140px] z-10 rounded-xl shadow-card`}
           >
             <ul className="list-none flex justify-end items-start flex-col gap-4 p-4">
               {navLinks.map((link) => (
                 <li
                   key={link.id}
                   className={`${
-                    active === link.title ? "text-white" : "text-secondary"
-                  } font-poppins font-medium cursor-pointer text-[16px]`}
+                    active === link.title ? "text-ink" : "text-secondary"
+                  } font-medium cursor-pointer text-[16px]`}
                   onClick={() => {
                     setActive(link.title);
                     setToggle(false);
@@ -83,7 +84,7 @@ const Navbar = () => {
                 <a
                   href={socialLinks.resume}
                   download="RishuShukla_Resume2026.pdf"
-                  className="text-[#915eff] font-medium text-[16px]"
+                  className="text-ink font-medium text-[16px]"
                   onClick={() => setToggle(false)}
                 >
                   Resume

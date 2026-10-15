@@ -10,13 +10,13 @@ const ProjectCard = ({ index, name, description, tags }) => {
   return (
     <motion.div
       variants={fadeIn("up", "spring", index * 0.5, 0.75)}
-      className="bg-tertiary p-6 rounded-2xl sm:w-[360px] w-full"
+      className="bg-tertiary p-6 rounded-2xl sm:w-[360px] w-full card-border shadow-card"
     >
-      <h3 className="text-white font-bold text-[24px]">{name}</h3>
+      <h3 className="text-ink font-bold text-[24px]">{name}</h3>
       <p className="mt-3 text-secondary text-[14px] leading-6">{description}</p>
       <div className="mt-4 flex flex-wrap gap-2">
         {tags.map((tag) => (
-          <p key={`${name}-${tag.name}`} className={`text-[14px] ${tag.color}`}>
+          <p key={`${name}-${tag.name}`} className="text-[14px] text-ink-muted">
             #{tag.name}
           </p>
         ))}

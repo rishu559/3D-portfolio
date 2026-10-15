@@ -63,7 +63,7 @@ const experiences = [
     title: "Software Engineer",
     company_name: "INDmoney, Bengaluru",
     initial: "IN",
-    iconBg: "#1a3a5c",
+    iconBg: "#111111",
     date: "Sep 2025 – Present",
     points: [
       "Led the Alpaca Fully Disclosed to Omnibus migration end-to-end, moving ~$10M of cash into the pool account and enabling interest income on idle balances.",
@@ -78,7 +78,7 @@ const experiences = [
     title: "Software Engineer",
     company_name: "Junglee Games, Bengaluru",
     initial: "JG",
-    iconBg: "#2d1f4e",
+    iconBg: "#2A2A2A",
     date: "Aug 2024 – Aug 2025",
     points: [
       "Introduced preferential matchmaking with priority-based optimal table counts, cutting average join time by 25% and lifting system revenue by 10%.",
@@ -91,7 +91,7 @@ const experiences = [
     title: "Software Engineer Intern",
     company_name: "Junglee Games, Bengaluru",
     initial: "JG",
-    iconBg: "#383E56",
+    iconBg: "#4A4A4A",
     date: "Aug 2023 – Aug 2024",
     points: [
       "Designed and deployed a real-time Odds Calculator Service using the 2+2 algorithm and Cactus Kev’s algorithm.",

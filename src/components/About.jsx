@@ -11,7 +11,7 @@ const ServiceCard = ({ index, title, icon }) => (
   <Tilt className="xs:w-[250px] w-full">
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-      className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
+      className="w-full card-border rounded-[20px] shadow-card bg-tertiary"
     >
       <div
         options={{
@@ -19,10 +19,14 @@ const ServiceCard = ({ index, title, icon }) => (
           scale: 1,
           speed: 450,
         }}
-        className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
+        className="rounded-[20px] py-5 px-12 min-h-[240px] flex justify-evenly items-center flex-col"
       >
-        <img src={icon} alt={title} className="w-16 h-16 object-contain" />
-        <h3 className="text-white text-[20px] font-bold text-center">{title}</h3>
+        <img
+          src={icon}
+          alt={title}
+          className="w-14 h-14 object-contain opacity-80"
+        />
+        <h3 className="text-ink text-[20px] font-bold text-center">{title}</h3>
       </div>
     </motion.div>
   </Tilt>
@@ -52,7 +56,7 @@ const About = () => {
         className="mt-8 grid sm:grid-cols-2 gap-6 max-w-3xl"
       >
         <div>
-          <h3 className="text-white font-semibold text-[18px] mb-2">Education</h3>
+          <h3 className="text-ink font-semibold text-[18px] mb-2">Education</h3>
           <p className="text-secondary text-[15px] leading-7">
             {education.degree}
             <br />
@@ -62,7 +66,7 @@ const About = () => {
           </p>
         </div>
         <div>
-          <h3 className="text-white font-semibold text-[18px] mb-2">
+          <h3 className="text-ink font-semibold text-[18px] mb-2">
             Achievements
           </h3>
           <ul className="text-secondary text-[15px] leading-7 list-disc ml-4 space-y-1">
